@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        bottom: 0;
+        position: absolute;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="sec1">
+          <form>
+            <div class="input">
+              <label for="days"> Day </label>
+              <br />
+              <input
+                type="number"
+                id="days"
+                name="days"
+                placeholder="DD"
+                min="1"
+                max="31"
+              />
+              <p class="error-msg hidden">this field is required</p>
+            </div>
+            <div class="input">
+              <label for="months">Month </label>
+              <br />
+              <input
+                type="number"
+                id="months"
+                placeholder="MM"
+                name="months"
+                min="1"
+                max="12"
+              />
+              <p class="error-msg hidden">this field is required</p>
+            </div>
+            <div class="input">
+              <label for="year"> Year</label>
+              <br />
+              <input
+                type="number"
+                id="year"
+                name="year"
+                placeholder="YYY"
+                min="1910"
+                max="2023"
+              />
+              <p class="error-msg hidden">this field is required</p>
+            </div>
+          </form>
+          <button class="btn">
+            <img src="assets/images/icon-arrow.svg" />
+          </button>
+          <hr />
+        </section>
+        <section class="sec2">
+          <h2 class="side2"><span class="years">--</span>years</h2>
+          <h2 class="side2"><span class="months">--</span>months</h2>
+          <h2 class="side2"><span class="days">--</span>days</h2>
+        </section>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">mariem khaled</a>.
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
